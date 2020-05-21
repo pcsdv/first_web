@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" href="{% static 'admin/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'admin/css/mystyle.css' %}">
+
+{% if title %}
+<title>{{title}}</title>
+{% else %}
+<title>Entry</title>
+{% endif %}
+
+</head>
+
+<body>
+		<div class="container">
+		<div class="jumbotron">
+	{% block content %}{% endblock %}
+
+	{% include 'dems/navbar.html' %}
+</div>
+</div>
+    <!-- Bootstrap core JavaScript -->
+<script src="{% static 'admin/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'admin/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
+

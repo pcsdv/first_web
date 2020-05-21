@@ -1,0 +1,37 @@
+
+body {
+  color: black;
+  text-align: left;
+  background-color:white;
+	}
+.jumbotron {
+	color:black;
+	background: #ccffcc;
+	}	
+div, a {
+	color:red;
+	}	
+/*this is comment- all h1 tag is effected */
+h1 {
+	color:black;
+	border-color:blue;
+	border-width:thick;
+	border-style:solid;
+	background:white;
+}
+
+/* h2,h3,h4,h5 {
+	border-color:black;
+	border-width:thick;
+	border-style:solid;
+	background:white;
+}
+*/
+ * {  
+	color:black;
+	background:white;
+}
+
+	a[href]{
+	color:blue;
+}

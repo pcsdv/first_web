@@ -1,0 +1,27 @@
+
+
+{% extends 'entries/base.html' %}
+{% block content %}
+{% include 'entries/common.html' %}
+<table border='0'>
+		<thead>
+				<th><h5>Name</h5></th>
+				<th><h5>Code</h5></th>
+				<th><h5>Views</h5></th>
+				<th><h5>Edit</h5></th>
+		</thead>
+		{% if momo %}
+		{% for m in momo %}
+		<tr>
+				<td><h5>{{ m.name }}</h5></td>	
+				<td><h5>{{ m.code }}</h5></td>
+	<td><a href="{% url 'pdtl-detail' m.id %}"/a><h5>Views</h5></a></td>
+<td><a href="{% url 'edit_p' m.id %}"><h5>Edit</h5></a></td>
+		</tr>
+
+		{% endfor %}
+		{% endif %}
+</table>
+ <h6><a href="{% url 'cr_pt' %}"> Newpatient </a></h6> 
+
+{% endblock %}

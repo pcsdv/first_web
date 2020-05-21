@@ -1,0 +1,22 @@
+
+
+{% extends 'dems/base.html' %}
+{% block content %}
+
+{% include 'entries/common.html' %}
+<table border='0'>
+		<tr>
+				<td><h5>Dated</h5></td>	
+				<td><h5>{{ doc.dated }}</h5></td>	
+		</tr>
+		<tr>
+				<td><h5> Name </h5></td>	
+				<td><h4>{{ doc.name }}</h4></td>	
+		</tr>
+		<tr>
+				<td><h5> </h5></td>	
+				<td><h4>{{ doc.details }}</h4></td>	
+		</tr>
+</table>
+
+{% endblock %}

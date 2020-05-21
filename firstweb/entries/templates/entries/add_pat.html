@@ -1,0 +1,19 @@
+
+{% extends 'entries/base.html' %}
+		{% block content %}
+{% include 'entries/common.html' %}
+<div class="container">
+
+<h4>Add details about Patient </h4>
+<form action="" method="POST">
+	{% csrf_token %}
+	TTitle: <input type="text" name="title"/><br/>
+	Content: <br/>
+	<textarea cols="35" rows="8" name="content">
+	</textarea><br/>
+		<input type="submit" value="Post"/>
+</form>
+
+</div>
+
+{% endblock %}

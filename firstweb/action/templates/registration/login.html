@@ -1,0 +1,39 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>{% block titles %} Login {% endblock %}  </title>
+
+	<link rel="stylesheet" href="{% static 'admin/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'admin/css/mystyle.css' %}">
+	</head>
+	<body>
+		<div class="container">
+		<div class="jumbotron">
+
+				<h4> Login page</h4>
+				{% if form.errors %}
+				<P>There is something wrong you entered </p>
+				{% endif %}
+
+				{% if next %}
+				<P>You can access the page </p>
+				{% endif %}
+				
+			<form method = "POST" action="#">
+						{% csrf_token %}
+						<p>Username : {{ form.username }}		
+						<p>Password : {{ form.password }}
+						<P><input type="submit" value="login"></P>
+
+				<input type="hidden" name="next" value="{{ next }}"></P>
+			</form>
+
+
+    <!-- Bootstrap core JavaScript -->
+<script src="{% static 'admin/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'admin/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+	</body>
+</html>

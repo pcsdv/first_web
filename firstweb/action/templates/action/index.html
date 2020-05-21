@@ -1,0 +1,21 @@
+
+{% extends 'action/base.html' %}
+{% block content %}
+<a class="display-5 text-center"><h3> BP  WEB  DEVLOPMENT</h3>
+
+<p class="lead"><h3>PROKASH  HOMEO  CHEMBER.</h3</p>
+<p class="lead">
+<h4><a class="btn btn-primary " href="/dems/stocksearch/" role="button">Stock</a>
+<a class="btn btn-primary " href="/dems/patientsearch/" role="button">Patien-remt</a>
+<a class="btn btn-primary " href="/dems/medosearch/" role="button">Medicine-Stock</a>
+<a class="btn btn-primary " href="/dems/hompathsearch/" role="button">Medicine-Short</a>
+<a class="btn btn-primary " href="{% url 'bio-search' %}" role="button">Meto-Medico</a>
+</p>
+
+<p class="lead">
+<a class="btn btn-danger" href="{% url 'dems' %}" role="button">Dems-link</a>
+<a class="btn btn-danger float-right " href="{% url 'entry-home' %}" role="button">Entries-link</a></h4>
+
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>{% block titles %} {% endblock %}  </title>
+
+	<link rel="stylesheet" href="{% static 'admin/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'admin/css/mystyle.css' %}">
+	</head>
+	<body>
+		<div class="container">
+		<div class="jumbotron">
+	{% include 'action/navbar.html' %}
+
+	{% block content %}	{% endblock %}
+    <!-- Bootstrap core JavaScript -->
+<script src="{% static 'admin/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'admin/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+	</body>
+</html>

@@ -1,0 +1,20 @@
+
+{% extends 'dems/base.html' %}
+	{% block content %}
+	{% include 'entries/uncommon.html' %}
+
+<h6><a href="{% url 'entries' %}">Show Diary</a>
+<a class="float-right" href="{% url 'adds' %}">Enter your Diary today</a></h6>
+
+<h6><a href="{% url 'homp-list' %}">Metoria medica list</a>
+<a class="float-right" href="{% url 'hompath' %}">Metoria Medica all</a></h6>
+
+<h6><a href="{% url 'pdtl-list' %}">Patient Diary Update</a>
+<a class="float-right" href="{% url 'cr_pt' %}">Create New Patient</a></h6>
+
+<h6><a href="{% url 'pdtl-list' %}">Patient_Diary list</a>
+<a class="float-right" href="{% url 'ad-hompath' %}">Create Metoria Medica</a></h6>
+
+</div>
+</div>
+	{% endblock %}

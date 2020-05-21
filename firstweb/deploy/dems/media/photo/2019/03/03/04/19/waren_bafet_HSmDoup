@@ -1,0 +1,1 @@
+value of a FileField, you've got a value of type File"? When working with an instance of FileField as above (with download.file) how do you magically find yourself with an instance of File instead? I see quite a lot of this kind of stuff with Django. It can be confusing. And if you could point to any documentation for this, it would be helpful. Thanks. – F

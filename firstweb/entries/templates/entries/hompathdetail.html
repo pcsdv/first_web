@@ -1,0 +1,52 @@
+
+{% extends 'entries/base.html' %}
+
+{% block content %}
+
+
+<div class="container">
+{% include 'entries/common.html' %}
+<div class="jumbotron">
+<table border='0'>
+<tr>
+	<td><h4>Homepathy medicine </h4></td>
+	<td><h3> {{ ho.name }}</h3><td>
+</tr>
+</table>
+
+<table border='0'>
+
+		<tr>
+			<td><h5>First_word</h5></td>
+			<td><h4> {{ ho.first_word }}</h4></td>
+		</tr>
+		<tr>
+		<tr>
+			<td><h5>Second_word</h5></td>
+			<td><h4>{{ ho.second_word }}</h4></td>
+		</tr>
+		<tr>
+			<td><h5>Third_word</h5></td>
+			<td><h4> {{ ho.third_word }}</h4></td>
+		</tr>
+		<tr>
+			<td><h5>Fourth_word </h5></td>
+			<td><h4>{{ ho.fourth_word }}</h4></td>
+		</tr>
+		<tr>
+			<td><h5>Antidote </h5></td>
+			<td><h4> {{ ho.antidote }}</h4></td>
+		</tr>
+		<tr>
+			<td><h5>Complimentery </h5></td>
+			<td><h4> {{ ho.complement }}</h4></td>
+		</tr>
+		<tr>
+			<td><h5>Miasam-Status</h5></td>
+			<td><h4>{{ ho.miasm }}</h4></td>
+		</tr>
+</table>
+
+</div>
+</div>
+{% endblock %}

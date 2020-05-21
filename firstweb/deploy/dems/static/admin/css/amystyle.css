@@ -1,0 +1,50 @@
+
+
+body {
+  color: black;
+  text-align: left;
+  background-color: blue;
+	}
+.jumbotron {
+	color:black;
+	background:cyan;
+	}	
+div, a {
+	color:red;
+	}	
+a .nav-item nav-link {
+	text-size:20px;
+}
+/* all h1 tag is effected */
+h1 {
+	text-align:center;
+	border-color:blue;
+	border-width:thick;
+	border-style:solid;
+	background:red;
+}
+h2,h3,h4,h5,h6 {
+	color:black;
+	border-color:red;
+	border-width:thick;
+	border-style:solid;
+	background:yellow;
+}
+* {
+color:black;
+background:red;
+}
+a[href]{
+color:blue;
+}
+img {
+	position:center;
+	border-color:red;
+	border-width:thick 10px;
+	border-style:solid;
+}
+nav ul li a {
+color:blue;
+	background:yellow;
+	text-size:10px;
+}

@@ -1,0 +1,27 @@
+
+{% extends 'entries/base.html' %}
+		{% block content %}
+<div class="container">
+
+{% include 'entries/common.html' %}
+<h4>Add text into metoria medica  </h4>
+<form method="POST" action="">
+	{% csrf_token %}
+	<div>
+			
+
+		<td><h4>{{ form.as_p }}</h4></td>
+
+	</div>
+	<div class="form-group">
+	<div class="col-lg-3">
+	<label class="col-lg-2">
+	<button type="submit" class="btn btn-primary">Submit</button>
+	</label>
+	</div>
+	</div>
+	</form><br><br>
+</div>
+		
+
+{% endblock %}

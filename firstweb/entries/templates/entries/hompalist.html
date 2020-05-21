@@ -1,0 +1,21 @@
+
+{% extends 'entries/base.html'%}
+{% block content %}
+
+{% include 'entries/common.html' %}
+<table>
+		<thead>
+				<th><h4>No</h4></th>
+				<th><h4>Name</h4></th>
+		</thead>
+{% for ho in hoho %} 
+<table>
+	<tr>
+		<td><h4>{{ ho.id }}</h4></td>
+
+<td><a href="{% url 'homp-detail' ho.id %}"><h4>{{ ho.name }}</h4></td>
+	</tr>
+</table>
+{% endfor %}
+{% endblock %}
+

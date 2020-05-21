@@ -1,0 +1,32 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>{% block titles %} {% endblock %}  </title>
+
+	<link rel="stylesheet" href="{% static 'admin/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'admin/css/mystyle.css' %}">
+	</head>
+	<body>
+		<div class="container">
+		<div class="jumbotron">
+				<h4>Register Page </h4>
+				
+			<form method = "POST" action="{% url "register" %}">
+				{% if form.errors %}
+				<P>There are errors in the form! </p>
+				{% endif %}
+				{% csrf_token %}
+							
+					{{ form }}
+
+				<P><input type="submit" value="Register"></P>
+			</form>
+
+
+    <!-- Bootstrap core JavaScript -->
+<script src="{% static 'admin/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'admin/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+	</body>
+</html>

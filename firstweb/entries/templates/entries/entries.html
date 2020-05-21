@@ -1,0 +1,27 @@
+
+{% extends 'entries/base.html' %}
+		{% block content %}
+		
+{% include 'entries/common.html' %}
+<table border="0">
+
+<thead>
+		<th><h4>NO</h4></th>
+		<th><h4>Text</h4></th>
+		<th><h4>Post Date</h4></th>
+
+</thead>
+{% for ov in over %}
+<tr>
+		<td><h4>{{ ov.id }}</h4></td>
+		<td><h4>{{ ov.text }}</h4></td>
+		<td><h4>{{ ov.date_posted }}</h4></td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}
+
+

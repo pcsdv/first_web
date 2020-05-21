@@ -1,0 +1,63 @@
+
+{% extends 'entries/base.html' %}
+		{% block content %}
+		
+{% include 'entries/common.html' %}
+<table border="0">
+
+<thead>
+		<th><h4>Option</h4></th>
+		<th><h4>Data</h4></th>
+
+</thead>
+{% for ov in over %}
+<tr>
+		<td><h4>{{ ov.id }}</h4></td>
+</tr>
+
+<tr>
+		<td><h4>Name</h4></td>
+		<td><h4>{{ ov.name }}</h4></td>
+</tr>
+
+<tr>
+		<td><h4>First_word</h4></td>
+		<td><h4>{{ ov.first_word }}</h4></td>
+</tr>
+
+<tr>
+		<td><h4> Second_word </h4></td>
+		<td><h4>{{ ov.second_word }}</h4></td>
+</tr>
+
+<tr>
+		<td><h4> Third_word </h4></td>
+		<td><h4>{{ ov.third_word }}</h4></td>
+</tr>
+
+<tr>
+		<td><h4> Fourth_word </h4></td>
+		<td><h4>{{ ov.fourth_word }}</h4></td>
+</tr>
+
+<tr>
+		<td><h4> Antidote </h4></td>
+		<td><h4>{{ ov.antidote }}</h4></td>
+</tr>
+
+<tr>
+		<td><h4> Complement </h4></td>
+		<td><h4>{{ ov.complement }}</h4></td>
+</tr>
+
+<tr>
+		<td><h4>Miasm</h4></td>
+		<td><h4>{{ ov.miasm }}</h4></td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}

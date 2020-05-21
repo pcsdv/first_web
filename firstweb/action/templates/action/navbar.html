@@ -1,0 +1,61 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+		<div class="container">
+ <a class="navbar-brand" href="#">PCS</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+<ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+<a class="nav-link" href=""> <span class="sr-only">(current)</span></a>
+     </li>
+	<li class="nav-item">
+			<a class="nav-link" href="{% url 'entries' %}">Posted</a>
+    </li>
+	<li class="nav-item">
+			<a class="nav-link" href="{% url 'adds' %}">ToPost</a>
+	</li>
+
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Entries</a>
+		 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	    	 <a class="dropdown-item" href="/entries/home/">Posted</a>
+			 <a class="dropdown-item" href="{% url 'adds' %}">ToPost</a>
+			 <a class="dropdown-item" href="#"></a>
+			</div>
+			</li>
+
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Search</a>
+		 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	 <a class="dropdown-item" href="/dems/medosearch/">Medicine_Stock</a>
+  <a class="dropdown-item" href="/dems/hompathsearch/">Hompath_Bng</a>
+		  <a class="dropdown-item" href="/dems/biosearch/">Biochemic</a>
+		  <a class="dropdown-item" href="/dems/patientsearch/">Patient</a>
+		  <a class="dropdown-item" href="/dems/stocksearch/">Stocks</a>
+	<a class="dropdown-item" href="i#"></a>
+			</div>
+			</li>
+</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+
+	<li class="nav-item ">
+		<a class="nav-link" href=""></a>
+	</li>
+	<li class="nav-item ">
+		<a class="nav-link" href="{% url 'login' %}">Sign in</a>
+	</li>
+	<li class="nav-item ">
+		<a class="nav-link" href=""></a>
+	</li>
+
+</ul>
+
+</div>
+</div>
+</nav>

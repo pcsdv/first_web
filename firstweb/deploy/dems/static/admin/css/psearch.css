@@ -1,0 +1,29 @@
+
+body {
+background:blue;
+color:white;
+text-align:left;
+}
+
+.jumbotron {
+    margin-top:110px;
+    background-color:red;
+    color:white;
+    border:yellow 10px solid;
+}
+
+img {
+height:160px;
+width:300px;
+background-color:powderblue;
+border:10px solid yellow;
+}
+.div1 {
+background:yellow;
+color:red;
+}
+.jumbotron .container
+ul{
+background:yellow;
+color:red;
+}
